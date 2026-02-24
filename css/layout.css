@@ -1,0 +1,149 @@
+/* ============================================
+   Layout — Containers, Grids, Section Spacing
+   ============================================ */
+
+/* --- Container --- */
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
+}
+
+/* --- Sections --- */
+.section {
+    padding-top: var(--space-section);
+    padding-bottom: var(--space-section);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Section Background Variants */
+.section--dark {
+    background: var(--clr-near-black);
+}
+
+.section--deep {
+    background: var(--clr-dark-purple);
+}
+
+.section--purple {
+    background: var(--clr-deep-purple);
+}
+
+.section--light {
+    background: var(--clr-soft-white);
+    color: var(--clr-near-black);
+}
+
+.section--gradient {
+    background: var(--grad-brand);
+}
+
+/* --- Section Headers --- */
+.section__header {
+    margin-bottom: var(--space-xl);
+    max-width: 720px;
+}
+
+.section__header--center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section__title {
+    font-size: var(--fs-h2);
+    font-weight: 800;
+    line-height: var(--lh-heading);
+    margin-bottom: var(--space-sm);
+}
+
+.section__subtitle {
+    font-size: var(--fs-body);
+    font-weight: 300;
+    line-height: var(--lh-body);
+    color: var(--clr-muted-lavender);
+}
+
+.section--light .section__subtitle {
+    color: #6B5B7B;
+}
+
+/* Accent colored text */
+.text-mint {
+    color: var(--clr-mint);
+}
+
+.text-magenta {
+    color: var(--clr-vivid-magenta);
+}
+
+.text-gradient {
+    background: var(--grad-brand);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* --- Grid Layouts --- */
+.grid {
+    display: grid;
+    gap: var(--space-lg);
+}
+
+.grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Split Layout — Text + Image */
+.split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+    align-items: center;
+}
+
+.split--reverse {
+    direction: rtl;
+}
+
+.split--reverse>* {
+    direction: ltr;
+}
+
+/* Flex utilities */
+.flex {
+    display: flex;
+}
+
+.flex--center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex--between {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex--gap-sm {
+    gap: var(--space-sm);
+}
+
+.flex--gap-md {
+    gap: var(--space-md);
+}
+
+.flex--wrap {
+    flex-wrap: wrap;
+}
