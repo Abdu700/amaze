@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMAZE Events — We Create Experiences That AMAZE</title>
+  <meta name="description"
+    content="Amaze is a Saudi-born creative events company dedicated to delivering cultural large-scale experiences that truly resonate with the Kingdom's identity.">
+  <meta property="og:title" content="AMAZE Events — We Create Experiences That AMAZE">
+  <meta property="og:description"
+    content="360° event solutions, transforming ideas into immersive experiences through creativity and precision.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#2D1B4E">
+
+  <!-- Preload Critical Fonts -->
+  <link rel="preload" href="fonts/Outfit-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Outfit-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ============================
+       PRELOADER
+       ============================ -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <img src="images/logos/mixed-purple-red.png" alt="AMAZE" class="preloader__logo">
+      <div class="preloader__bar-track">
+        <div class="preloader__bar-fill" id="preloader-bar"></div>
+      </div>
+      <div class="preloader__text">Loading Experience...</div>
+    </div>
+  </div>
+
+  <!-- ============================
+       SKIP LINK (A11y)
+       ============================ -->
+  <a href="#main" class="sr-only">Skip to main content</a>
+
+  <!-- ============================
+       NAVIGATION
+       ============================ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="#hero" aria-label="AMAZE Events Home">
+        <img src="images/logos/mint-green.png" alt="AMAZE Events Logo" class="nav__logo" id="nav-logo">
+      </a>
+
+      <div class="nav__links" id="nav-links">
+        <a href="#about" class="nav__link" data-nav="about">About</a>
+        <a href="#services" class="nav__link" data-nav="services">Services</a>
+        <a href="#numbers" class="nav__link" data-nav="numbers">Experience</a>
+        <a href="#projects" class="nav__link" data-nav="projects">Projects</a>
+        <a href="#contact" class="nav__link" data-nav="contact">
+          <span class="btn btn--primary btn--sm" style="padding: 10px 24px;">Let's Talk</span>
+        </a>
+      </div>
+
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="nav__mobile-menu" id="mobile-menu">
+      <a href="#about" class="nav__link" data-mobile-nav>About</a>
+      <a href="#services" class="nav__link" data-mobile-nav>Services</a>
+      <a href="#numbers" class="nav__link" data-mobile-nav>Experience</a>
+      <a href="#projects" class="nav__link" data-mobile-nav>Projects</a>
+      <a href="#contact" class="nav__link" data-mobile-nav>Contact</a>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- ============================
+         SECTION 1: HERO
+         ============================ -->
+    <section class="hero section" id="hero">
+      <!-- Background Effects -->
+      <div class="hero__bg-pattern"></div>
+      <div class="hero__blob hero__blob--1"></div>
+      <div class="hero__blob hero__blob--2"></div>
+      <div class="hero__blob hero__blob--3"></div>
+      <img src="images/hero/m-character.png" alt="" class="hero__m-character" aria-hidden="true" loading="lazy">
+
+      <div class="container split">
+        <!-- Left: Text Content -->
+        <div class="hero__content">
+          <div class="hero__badge">
+            <span class="hero__badge-dot"></span>
+            360° Event Solutions
+          </div>
+
+          <h1 class="hero__title">
+            We Create Experiences That <span class="text-mint">AMAZE</span>
+          </h1>
+
+          <p class="hero__subtitle">
+            We offer 360° event solutions, transforming ideas into immersive experiences through creativity and
+            precision.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary">
+              Explore Our Work
+              <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn--ghost">
+              Get In Touch
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Hero Image -->
+        <div class="hero__image-wrapper">
+          <img src="images/hero/let-us-amaze-you.png" alt="AMAZE Events — spectacular event production"
+            class="hero__image" loading="eager">
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <polyline points="7 13 12 18 17 13" />
+          <line x1="12" y1="6" x2="12" y2="18" />
+        </svg>
+      </div>
+    </section>
+
+
+    <!-- ============================
+         SECTION 2: ABOUT US — matching company profile layout
+         ============================ -->
+    <section class="about-section" id="about">
+      <!-- Vertical label -->
+      <div class="about-section__label reveal reveal--left">ABOUT US</div>
+
+      <!-- Image -->
+      <img src="images/about/about-us.png" alt="AMAZE Events audience at a cultural event" class="about-section__image"
+        loading="lazy">
+
+      <!-- Text Content -->
+      <div class="about-section__content reveal reveal--right">
+
+        <h2 class="about-section__text">
+          Amaze is a Saudi-born creative events company
+        </h2>
+
+        <p class="about-section__desc">
+          dedicated to delivering cultural large-scale experiences that truly resonate with the Kingdom's identity.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ============================
+         SECTION 3: 360° SOLUTIONS INTRO — matching profile page 3
+         ============================ -->
+    <section class="services-section section" id="services">
+      <div class="services-section__bg-image" style="background-image: url('images/services/360-solutions.png');"></div>
+
+      <div class="services-section__intro">
+        <h2 class="projects-header__title reveal"
+          style="color: #D8D8AA; -webkit-text-stroke: 0; margin-bottom: var(--space-xl); opacity: 0.85;">SERVICES WE
+          PROVIDE</h2>
+
+        <h3 class="services-section__heading reveal">
+          We offer 360° event solutions, transforming ideas into immersive experiences through creativity and precision.
+        </h3>
+
+        <p class="services-section__subtext reveal">
+          With expert operations and logistics, Amaze designs experiences that inspire, engage, and elevate every
+          moment. We don't just plan events, we create moments that truly amaze.
+        </p>
+      </div>
+
+      <!-- 8 SERVICES — Page 1 (matching profile page 4) -->
+      <div class="services-grid reveal reveal--stagger">
+        <!-- 1 -->
+        <div class="service-item">
+          <div class="service-item__header">
+            <span class="service-item__number">1</span>
+            <h3 class="service-item__title">Concept &amp; Content Development</h3>
+          </div>
+          <div class="service-item__list">
+            <div class="service-item__list-item">
+              <span class="service-item__list-dot"></span>
+              <span>Development of event concepts, themes, and messaging</span>
+            </div>
+            <div class="service-item__list-item">
+              <span class="service-item__list-dot"></span>
+              <span>Content creation and experience structuring</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="service-item">
+          <div class="service-item__header">
+            <span class="service-item__number">2</span>
+            <h3 class="service-item__title">Design &amp; Planning</h3>
+          </div>
+          <div class="service-item__list">
+            <div class="service-item__list-item">
+              <span class="service-item__list-dot"></span>
+              <span>3D design and visualizations</span>
+            </div>
+            <div class="service-item__list-item">
+              <span class="service-item__list-dot"></span>
+              <span>Event planning, scheduling, and budget management</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="service-item">
+          <div class="service-item__header">
+            <span class="service-item__number">3</span>
+            <h3 class="service-item__title">Production &amp; Manufacturing</h3>
+          </div>
+          <div class="service-item__list">
+            <div class="service-item__list-item">
+              <span class="service-item__list-dot"></span>
+              <span>Custom wood and steel fabrication through our ISO-certified facility</span>
+            </div>
+            <div class="service-item__list-item">
+              <span class="service-item__list-dot"></span>
+              <span>Printing services including branding, signage, and event materials</span>
+            </div>
+            <div class="service-item__list-item">
+              <span class="service-item__list-dot"></span>
+              <span>Manufacturing of trophies, awards, and custom gifts</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="service-item">
+          <div class="service-item__header">
+            <span class="service-item__number">4</span>
+            <h3 class="service-item__title">Technical &amp; Stage Production (AVL)</h3>
+          </div>
+          <div class="service-item__list">
+            <div class="service-item__list-item">
+              <span class="service-item__list-dot"></span>
+              <span>Audio, visual, lighting, and LED solutions</span>
+            </div>
+            <div class="service-item__list-item">
+              <span class="service-item__list-dot"></span>
+              <span>Stage setup, technical operation, and show control</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 SERVICES — Page 2 (matching profile page 5) -->
+      <div class="services-grid services-grid--page2 reveal reveal--stagger">
+        <!-- 5 -->
+        <div class="service-item">
+          <div class="service-item__header">
+            <span class="service-item__number">5</span>
+            <h3 class="service-item__title">Events Management</h3>
+          </div>
+          <div class="service-item__list">
+            <div class="service-item__list-item">
+              <span class="service-item__list-dot"></span>
+              <span>Site operations, logistics coordination, and vendor management</span>
+            </div>
+            <div class="service-item__list-item">
+              <span class="service-item__list-dot"></span>
+              <span>Load-in, installation, dismantling, and transportation</span>
+            </div>
+            <div class="service-item__list-item">
+              <span class="service-item__list-dot"></span>
+              <span>Coordination of event permits and government approvals</span>
+            </div>
+            <div class="service-item__list-item">
+              <span class="service-item__list-dot"></span>
+              <span>Compliance with Saudi regulations and requirements</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="service-item">
+          <div class="service-item__header">
+            <span class="service-item__number">6</span>
+            <h3 class="service-item__title">Crowd Management &amp; Safety</h3>
+          </div>
+          <div class="service-item__list">
+            <div class="service-item__list-item">
+              <span class="service-item__list-dot"></span>
+              <span>Crowd flow planning and on-ground management</span>
+            </div>
+            <div class="service-item__list-item">
+              <span class="service-item__list-dot"></span>
+              <span>Security coordination and safety compliance</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="service-item">
+          <div class="service-item__header">
+            <span class="service-item__number">7</span>
+            <h3 class="service-item__title">Talent &amp; Hospitality</h3>
+          </div>
+          <div class="service-item__list">
+            <div class="service-item__list-item">
+              <span class="service-item__list-dot"></span>
+              <span>Talent sourcing and management</span>
+            </div>
+            <div class="service-item__list-item">
+              <span class="service-item__list-dot"></span>
+              <span>Catering coordination and hospitality services</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="service-item">
+          <div class="service-item__header">
+            <span class="service-item__number">8</span>
+            <h3 class="service-item__title">Immersive Experiences</h3>
+          </div>
+          <div class="service-item__list">
+            <div class="service-item__list-item">
+              <span class="service-item__list-dot"></span>
+              <span>Design and delivery of immersive and interactive experiences</span>
+            </div>
+            <div class="service-item__list-item">
+              <span class="service-item__list-dot"></span>
+              <span>Audience journey mapping and engagement design</span>
+            </div>
+            <div class="service-item__list-item">
+              <span class="service-item__list-dot"></span>
+              <span>Integration of space, content, technology, and storytelling</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================
+         SECTION 4: EXPERIENCE IN NUMBERS — matching profile page 6
+         ============================ -->
+    <section class="numbers-section" id="numbers">
+      <!-- Left: Image -->
+      <img src="images/services/experience-numbers.png" alt="AMAZE Events — Book Fair entrance"
+        class="numbers-section__image reveal reveal--left" loading="lazy">
+
+      <!-- Right: Stats -->
+      <div class="numbers-section__content reveal reveal--right">
+
+        <h2 class="numbers-section__title">Experience In Numbers:</h2>
+
+        <!-- 10,000 Tonnes -->
+        <div class="number-stat">
+          <div class="number-stat__icon">
+            <svg viewBox="0 0 64 64" fill="currentColor">
+              <path d="M32 8L12 24v4h4v24h32V28h4v-4L32 8zm12 40H20V26h24v22zm-12-30a4 4 0 110 8 4 4 0 010-8z" />
+            </svg>
+          </div>
+          <div>
+            <div class="number-stat__value" data-target="10000">0</div>
+            <div class="number-stat__label">Tonnes of Fabricated Wood</div>
+          </div>
+        </div>
+
+        <!-- 2 TB -->
+        <div class="number-stat">
+          <div class="number-stat__icon">
+            <svg viewBox="0 0 64 64" fill="currentColor">
+              <rect x="12" y="12" width="40" height="32" rx="4" />
+              <rect x="20" y="48" width="24" height="4" rx="2" />
+              <rect x="24" y="20" width="16" height="4" rx="1" />
+              <rect x="24" y="28" width="12" height="4" rx="1" />
+            </svg>
+          </div>
+          <div>
+            <div class="number-stat__value" data-target="2" data-suffix=" TB">0</div>
+            <div class="number-stat__label">Of Printed Files</div>
+          </div>
+        </div>
+
+        <!-- 12,000 M² -->
+        <div class="number-stat">
+          <div class="number-stat__icon">
+            <svg viewBox="0 0 64 64" fill="currentColor">
+              <path d="M8 56h12V32H8v24zm16 0h16V20H24v36zm20 0h12V8H44v48z" />
+            </svg>
+          </div>
+          <div>
+            <div class="number-stat__value" data-target="12000">0</div>
+            <div class="number-stat__label">M² Manufacturing Space</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================
+         SECTION 5: OUR PROJECTS HEADER
+         ============================ -->
+    <div class="projects-header" id="projects">
+      <h2 class="projects-header__title reveal">OUR PROJECTS</h2>
+      <img src="images/logos/mixed-purple-red.png" alt="AMAZE" class="projects-header__logo reveal">
+    </div>
+
+
+    <!-- ============================
+         PROJECT 1: NATIONAL DAY 89
+         ============================ -->
+    <div class="project-section">
+      <div class="project-section__hero reveal">
+        <!-- Large image left -->
+        <div class="project-section__image-wrapper slider-reveal">
+          <img src="images/portfolio/national-day-89/img1.png" alt="National Day 89 — Exhibition Hall"
+            class="project-section__image" loading="lazy">
+        </div>
+
+        <!-- Info right -->
+        <div class="project-section__info">
+          <h3 class="project-section__name">NATIONAL DAY 89</h3>
+
+          <div class="project-section__desc">
+            <div class="project-section__logo-placeholder">LOGO<br>HERE</div>
+            The 89th Saudi National Day season was a resounding success, achieved through the collective efforts of
+            governmental and private entities, as well as individuals. To express their gratitude and celebrate their
+            accomplishments, GEA organized a grand Thank You event, bringing everyone together. The event was
+            meticulously designed and orchestrated by Amaze Events.
+          </div>
+
+          <a href="#" class="btn btn--play">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3" />
+            </svg>
+            PLAY VIDEO
+          </a>
+        </div>
+      </div>
+
+      <!-- Gallery row -->
+      <div class="project-section__gallery-header">
+        <div class="project-section__gallery-title">NATIONAL DAY 89</div>
+        <img src="images/logos/mixed-purple-red.png" alt="AMAZE" class="project-section__gallery-logo">
+      </div>
+
+      <div class="project-gallery reveal reveal--stagger">
+        <div class="project-gallery__item slider-reveal">
+          <img src="images/portfolio/national-day-89/img2.png" alt="National Day 89 — Gala Dinner"
+            class="project-gallery__img" loading="lazy">
+        </div>
+        <div class="project-gallery__item slider-reveal">
+          <img src="images/portfolio/national-day-89/img3.png" alt="National Day 89 — Light Corridor"
+            class="project-gallery__img" loading="lazy">
+        </div>
+        <div class="project-gallery__item slider-reveal">
+          <img src="images/portfolio/national-day-89/img4.png" alt="National Day 89 — Stage & Awards"
+            class="project-gallery__img" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <div class="project-divider"></div>
+
+    <!-- ============================
+         PROJECT 2: MINISTRY OF CULTURE — ARDAH MUSEUM
+         ============================ -->
+    <div class="project-section">
+      <div class="project-section__hero reveal">
+        <!-- Large image left -->
+        <div class="project-section__image-wrapper slider-reveal">
+          <img src="images/portfolio/ardah-museum/img1.png" alt="Ardah Museum — Main Exhibition"
+            class="project-section__image" loading="lazy">
+        </div>
+
+        <!-- Info right -->
+        <div class="project-section__info">
+          <h3 class="project-section__name">MINISTRY OF CULTURE</h3>
+          <div class="project-section__subtitle">ARDAH MUSEUM</div>
+
+          <div class="project-section__desc">
+            <div class="project-section__logo-placeholder">LOGO<br>HERE</div>
+            It was our delight to collaborate with Sadu in participating in the Saudi Ardah Exhibition held in Safat
+            Square for an extended period of six days. The exhibition aims to offer a sensory experience that harmonizes
+            the past and the present, incorporating historical content within a visual framework inspired by desert
+            nature.
+            <br><br>
+            Notably, the exhibition features a visual presentation of the horseshoe show, reminiscent of King
+            Abdulaziz's performance alongside knights. This exhibition serves as a testament to the Ministry of
+            Culture's ongoing commitment to introducing the ancient history of the Saudi Ardah and elevating the
+            significance of Saudi identity and its enduring value for future generations.
+          </div>
+
+          <a href="#" class="btn btn--play">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3" />
+            </svg>
+            PLAY VIDEO
+          </a>
+        </div>
+      </div>
+
+      <!-- Gallery row -->
+      <div class="project-section__gallery-header">
+        <div class="project-section__gallery-title">ARDAH MUSEUM</div>
+        <img src="images/logos/mixed-purple-red.png" alt="AMAZE" class="project-section__gallery-logo">
+      </div>
+
+      <div class="project-gallery reveal reveal--stagger">
+        <div class="project-gallery__item slider-reveal">
+          <img src="images/portfolio/ardah-museum/img3.png" alt="Ardah Museum — Traditional Sword Dance"
+            class="project-gallery__img" loading="lazy">
+        </div>
+        <div class="project-gallery__item slider-reveal">
+          <img src="images/portfolio/ardah-museum/img4.png" alt="Ardah Museum — Traditional Musician"
+            class="project-gallery__img" loading="lazy">
+        </div>
+        <div class="project-gallery__item slider-reveal">
+          <img src="images/portfolio/ardah-museum/img5.png" alt="Ardah Museum — Traditional Performers"
+            class="project-gallery__img" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Extra gallery — Digital displays -->
+      <div class="project-section__gallery-header">
+        <div class="project-section__gallery-title">ARDAH MUSEUM</div>
+        <img src="images/logos/mixed-purple-red.png" alt="AMAZE" class="project-section__gallery-logo">
+      </div>
+
+      <div class="project-gallery project-gallery--single project-gallery--fullstretch reveal">
+        <div class="project-gallery__item" style="grid-column: span 3; aspect-ratio: 21/9; border-radius: 0;">
+          <img src="images/portfolio/ardah-museum/img2.png" alt="Ardah Museum — Digital Interactive Wall"
+            class="project-gallery__img project-gallery__img--no-hover" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <div class="project-divider"></div>
+
+    <!-- ============================
+         PROJECT 3: RIYADH INTERNATIONAL BOOK FAIR
+         ============================ -->
+    <div class="project-section">
+      <div class="project-section__hero reveal">
+        <!-- Large image left -->
+        <div class="project-section__image-wrapper slider-reveal">
+          <img src="images/portfolio/book-fair/img1.png" alt="Riyadh International Book Fair — Grand Stage"
+            class="project-section__image" loading="lazy">
+        </div>
+
+        <!-- Info right -->
+        <div class="project-section__info">
+          <h3 class="project-section__name">RIYADH INTERNATIONAL</h3>
+          <div class="project-section__subtitle">BOOK FAIR</div>
+
+          <div class="project-section__desc">
+            <div class="project-section__logo-placeholder">LOGO<br>HERE</div>
+            For the second consecutive year, the ImpressIV team showcased an exceptional standard of excellence at this
+            event. Visitors were captivated by a mesmerizing 3D mapping display on the facades, accompanied by a diverse
+            array of interactive visual exhibits strategically placed throughout the venue.
+            <br><br>
+            Amaze takes immense pride in the successful collaboration with the Ministry of Culture, which played a
+            pivotal role in the resounding success of this event.
+          </div>
+
+          <a href="#" class="btn btn--play">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3" />
+            </svg>
+            PLAY VIDEO
+          </a>
+        </div>
+      </div>
+
+      <!-- Gallery row -->
+      <div class="project-section__gallery-header">
+        <div class="project-section__gallery-title">BOOK FAIR</div>
+        <img src="images/logos/mixed-purple-red.png" alt="AMAZE" class="project-section__gallery-logo">
+      </div>
+
+      <div class="project-gallery project-gallery--two reveal reveal--stagger">
+        <div class="project-gallery__item slider-reveal">
+          <img src="images/portfolio/book-fair/img2.png" alt="Book Fair — Vision 2030 Display"
+            class="project-gallery__img" loading="lazy">
+        </div>
+        <div class="project-gallery__item slider-reveal">
+          <img src="images/portfolio/book-fair/img3.png" alt="Book Fair — Interactive Performance"
+            class="project-gallery__img" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+  <!-- ============================
+       MERGED FINAL SECTION — Contact + Footer
+       ============================ -->
+  <footer class="final-section" id="contact">
+    <!-- Left Column: Sentence image + M character + email -->
+    <div class="final-section__left reveal">
+      <img src="images/hero/let_us_amaze_you_sentence.png" alt="LET US amaze YOU" class="final-section__sentence-img">
+
+      <img src="images/hero/m-character.png" alt="" class="final-section__m-char" aria-hidden="true">
+
+      <a href="mailto:hello@amaze.sa" class="final-section__email">HELLO@AMAZE.SA</a>
+
+      <div class="final-section__copyright">© 2026 AMAZE. All rights reserved.</div>
+    </div>
+
+    <!-- Right Column: Image background with contact form overlay -->
+    <div class="final-section__right reveal reveal--right">
+      <img src="images/hero/let-us-amaze-you.png" alt="AMAZE Events audience" class="final-section__bg-image"
+        loading="lazy">
+
+      <div class="final-section__form-overlay">
+        <h2 class="final-section__form-title">Get In Touch</h2>
+        <p class="final-section__form-subtitle">Ready to create something extraordinary?</p>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <input type="text" class="form-group__input" id="form-name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-group__input" id="form-email" placeholder="Email Address" required>
+          </div>
+          <div class="form-group form-group--full">
+            <input type="text" class="form-group__input" id="form-subject" placeholder="Subject">
+          </div>
+          <div class="form-group form-group--full">
+            <textarea class="form-group__textarea" id="form-message" placeholder="Tell us about your event..."
+              required></textarea>
+          </div>
+          <div class="form-group form-group--full">
+            <button type="submit" class="btn btn--gradient" style="width: 100%;">
+              Send Message
+              <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js" defer></script>
+  <script src="js/counter.js" defer></script>
+  <script src="js/carousel.js" defer></script>
+</body>
+
+</html>
