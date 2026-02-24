@@ -28,6 +28,9 @@
 
 <body>
 
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
   <!-- ============================
        PRELOADER
        ============================ -->
@@ -88,11 +91,8 @@
          SECTION 1: HERO
          ============================ -->
     <section class="hero section" id="hero">
-      <!-- Background Effects -->
-      <div class="hero__bg-pattern"></div>
-      <div class="hero__blob hero__blob--1"></div>
-      <div class="hero__blob hero__blob--2"></div>
-      <div class="hero__blob hero__blob--3"></div>
+      <!-- Interactive Particle Network -->
+      <canvas id="hero-particles" class="hero__particles"></canvas>
       <img src="images/hero/m-character.png" alt="" class="hero__m-character" aria-hidden="true" loading="lazy">
 
       <div class="container split">
@@ -103,8 +103,7 @@
             360° Event Solutions
           </div>
 
-          <h1 class="hero__title">
-            We Create Experiences That <span class="text-mint">AMAZE</span>
+          <h1 class="hero__title" id="hero-title" data-typewriter="We Create Experiences That AMAZE">
           </h1>
 
           <p class="hero__subtitle">
@@ -150,17 +149,19 @@
          ============================ -->
     <section class="about-section" id="about">
       <!-- Vertical label -->
-      <div class="about-section__label reveal reveal--left">ABOUT US</div>
+      <div class="about-section__label">ABOUT US</div>
 
       <!-- Image -->
       <img src="images/about/about-us.png" alt="AMAZE Events audience at a cultural event" class="about-section__image"
         loading="lazy">
 
       <!-- Text Content -->
-      <div class="about-section__content reveal reveal--right">
+      <div class="about-section__content">
 
         <h2 class="about-section__text">
-          Amaze is a Saudi-born creative events company
+          <img src="images/logos/formal_logo.png" alt="Amaze"
+            style="height: .7em; vertical-align: middle; margin-right: 8px; display: inline-block;"> is a Saudi-born
+          creative events company
         </h2>
 
         <p class="about-section__desc">
@@ -177,10 +178,6 @@
       <div class="services-section__bg-image" style="background-image: url('images/services/360-solutions.png');"></div>
 
       <div class="services-section__intro">
-        <h2 class="projects-header__title reveal"
-          style="color: #D8D8AA; -webkit-text-stroke: 0; margin-bottom: var(--space-xl); opacity: 0.85;">SERVICES WE
-          PROVIDE</h2>
-
         <h3 class="services-section__heading reveal">
           We offer 360° event solutions, transforming ideas into immersive experiences through creativity and precision.
         </h3>
@@ -189,6 +186,10 @@
           With expert operations and logistics, Amaze designs experiences that inspire, engage, and elevate every
           moment. We don't just plan events, we create moments that truly amaze.
         </p>
+
+        <h2 class="projects-header__title reveal"
+          style="color: #D8D8AA; -webkit-text-stroke: 0; margin-top: var(--space-xl); opacity: 0.85;">SERVICES WE
+          PROVIDE</h2>
       </div>
 
       <!-- 8 SERVICES — Page 1 (matching profile page 4) -->
