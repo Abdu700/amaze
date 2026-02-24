@@ -15,19 +15,30 @@
 
     /* About section */
     .about-section {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
     }
 
     .about-section__label {
         writing-mode: horizontal-tb;
-        transform: none;
+        transform: none !important;
         padding: var(--space-lg) var(--side-padding);
         font-size: clamp(2rem, 5vw, 3.5rem);
+        order: 1;
+    }
+
+    .about-section__content {
+        order: 2;
+    }
+
+    .about-section__image {
+        order: 3;
     }
 
     /* Numbers section */
     .numbers-section {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .numbers-section__image {
@@ -41,7 +52,8 @@
 
     /* Project hero */
     .project-section__hero {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     /* Portfolio gallery */
@@ -51,7 +63,8 @@
 
     /* Merged final section */
     .final-section {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .final-section__left {
