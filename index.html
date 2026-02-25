@@ -181,7 +181,7 @@
         <p class="services-section__subtext reveal">
           With expert operations and logistics, Amaze designs experiences that inspire, engage, and elevate every
           moment. We don't just plan events, we create moments that truly amaze.
-        </p>
+        </p> <br><br>
 
         <h2 class="projects-header__title reveal"
           style="color: #D8D8AA; -webkit-text-stroke: 0; margin-top: var(--space-xl); opacity: 0.85;">SERVICES WE
@@ -415,195 +415,223 @@
 
 
     <!-- ============================
-         SECTION 5: OUR PROJECTS HEADER
+         SECTION 5: OUR PROJECTS
          ============================ -->
     <div class="projects-header" id="projects">
       <h2 class="projects-header__title reveal">OUR PROJECTS</h2>
+
+      <div class="projects-header__controls">
+        <button class="project-slider__arrow project-slider__arrow--left" id="slider-prev" aria-label="Previous slide">
+          <img src="images/portfolio/arrow.png" alt="Previous" class="project-slider__arrow-icon">
+        </button>
+        <button class="project-slider__arrow project-slider__arrow--right" id="slider-next" aria-label="Next slide">
+          <img src="images/portfolio/arrow.png" alt="Next" class="project-slider__arrow-icon">
+        </button>
+      </div>
+
       <img src="images/logos/mixed-purple-red.png" alt="AMAZE" class="projects-header__logo reveal">
     </div>
 
+    <div class="project-slider" id="project-slider">
 
-    <!-- ============================
-         PROJECT 1: NATIONAL DAY 89
-         ============================ -->
-    <div class="project-section">
-      <div class="project-section__hero reveal">
-        <!-- Large image left -->
-        <div class="project-section__image-wrapper slider-reveal">
-          <img src="images/portfolio/national-day-89/img1.png" alt="National Day 89 — Exhibition Hall"
-            class="project-section__image" loading="lazy">
-        </div>
+      <!-- Slides Container -->
+      <div class="project-slider__track">
 
-        <!-- Info right -->
-        <div class="project-section__info">
-          <h3 class="project-section__name">NATIONAL DAY 89</h3>
-
-          <div class="project-section__desc">
-            <div class="project-section__logo-placeholder">LOGO<br>HERE</div>
-            The 89th Saudi National Day season was a resounding success, achieved through the collective efforts of
-            governmental and private entities, as well as individuals. To express their gratitude and celebrate their
-            accomplishments, GEA organized a grand Thank You event, bringing everyone together. The event was
-            meticulously designed and orchestrated by Amaze Events.
+        <!-- SLIDE 1: National Day 89 — Hero -->
+        <div class="project-slide project-slide--active" data-slide="0">
+          <div class="project-section">
+            <div class="project-section__hero">
+              <div class="project-section__image-wrapper">
+                <img src="images/portfolio/national-day-89/img1.png" alt="National Day 89 — Exhibition Hall"
+                  class="project-section__image" loading="lazy">
+              </div>
+              <div class="project-section__info">
+                <h3 class="project-section__name">NATIONAL DAY 89</h3>
+                <div class="project-section__desc">
+                  <div class="project-section__logo-placeholder">LOGO<br>HERE</div>
+                  The 89th Saudi National Day season was a resounding success, achieved through the collective efforts
+                  of
+                  governmental and private entities, as well as individuals. To express their gratitude and celebrate
+                  their
+                  accomplishments, GEA organized a grand Thank You event, bringing everyone together. The event was
+                  meticulously designed and orchestrated by Amaze Events.
+                </div>
+                <a href="#" class="btn btn--play">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3" />
+                  </svg>
+                  PLAY VIDEO
+                </a>
+              </div>
+            </div>
           </div>
-
-          <a href="#" class="btn btn--play">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-              <polygon points="5 3 19 12 5 21 5 3" />
-            </svg>
-            PLAY VIDEO
-          </a>
-        </div>
-      </div>
-
-      <!-- Gallery row -->
-      <div class="project-section__gallery-header">
-        <div class="project-section__gallery-title">NATIONAL DAY 89</div>
-        <img src="images/logos/mixed-purple-red.png" alt="AMAZE" class="project-section__gallery-logo">
-      </div>
-
-      <div class="project-gallery reveal reveal--stagger">
-        <div class="project-gallery__item slider-reveal">
-          <img src="images/portfolio/national-day-89/img2.png" alt="National Day 89 — Gala Dinner"
-            class="project-gallery__img" loading="lazy">
-        </div>
-        <div class="project-gallery__item slider-reveal">
-          <img src="images/portfolio/national-day-89/img3.png" alt="National Day 89 — Light Corridor"
-            class="project-gallery__img" loading="lazy">
-        </div>
-        <div class="project-gallery__item slider-reveal">
-          <img src="images/portfolio/national-day-89/img4.png" alt="National Day 89 — Stage & Awards"
-            class="project-gallery__img" loading="lazy">
-        </div>
-      </div>
-    </div>
-
-    <div class="project-divider"></div>
-
-    <!-- ============================
-         PROJECT 2: MINISTRY OF CULTURE — ARDAH MUSEUM
-         ============================ -->
-    <div class="project-section">
-      <div class="project-section__hero reveal">
-        <!-- Large image left -->
-        <div class="project-section__image-wrapper slider-reveal">
-          <img src="images/portfolio/ardah-museum/img1.png" alt="Ardah Museum — Main Exhibition"
-            class="project-section__image" loading="lazy">
         </div>
 
-        <!-- Info right -->
-        <div class="project-section__info">
-          <h3 class="project-section__name">MINISTRY OF CULTURE</h3>
-          <div class="project-section__subtitle">ARDAH MUSEUM</div>
-
-          <div class="project-section__desc">
-            <div class="project-section__logo-placeholder">LOGO<br>HERE</div>
-            It was our delight to collaborate with Sadu in participating in the Saudi Ardah Exhibition held in Safat
-            Square for an extended period of six days. The exhibition aims to offer a sensory experience that harmonizes
-            the past and the present, incorporating historical content within a visual framework inspired by desert
-            nature.
-            <br><br>
-            Notably, the exhibition features a visual presentation of the horseshoe show, reminiscent of King
-            Abdulaziz's performance alongside knights. This exhibition serves as a testament to the Ministry of
-            Culture's ongoing commitment to introducing the ancient history of the Saudi Ardah and elevating the
-            significance of Saudi identity and its enduring value for future generations.
+        <!-- SLIDE 2: National Day 89 — Gallery -->
+        <div class="project-slide" data-slide="1">
+          <div class="project-section">
+            <div class="project-section__gallery-header">
+              <div class="project-section__gallery-title">NATIONAL DAY 89</div>
+              <img src="images/logos/mixed-purple-red.png" alt="AMAZE" class="project-section__gallery-logo">
+            </div>
+            <div class="project-gallery">
+              <div class="project-gallery__item">
+                <img src="images/portfolio/national-day-89/img2.png" alt="National Day 89 — Gala Dinner"
+                  class="project-gallery__img" loading="lazy">
+              </div>
+              <div class="project-gallery__item">
+                <img src="images/portfolio/national-day-89/img3.png" alt="National Day 89 — Light Corridor"
+                  class="project-gallery__img" loading="lazy">
+              </div>
+              <div class="project-gallery__item">
+                <img src="images/portfolio/national-day-89/img4.png" alt="National Day 89 — Stage & Awards"
+                  class="project-gallery__img" loading="lazy">
+              </div>
+            </div>
           </div>
-
-          <a href="#" class="btn btn--play">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-              <polygon points="5 3 19 12 5 21 5 3" />
-            </svg>
-            PLAY VIDEO
-          </a>
-        </div>
-      </div>
-
-      <!-- Gallery row -->
-      <div class="project-section__gallery-header">
-        <div class="project-section__gallery-title">ARDAH MUSEUM</div>
-        <img src="images/logos/mixed-purple-red.png" alt="AMAZE" class="project-section__gallery-logo">
-      </div>
-
-      <div class="project-gallery reveal reveal--stagger">
-        <div class="project-gallery__item slider-reveal">
-          <img src="images/portfolio/ardah-museum/img3.png" alt="Ardah Museum — Traditional Sword Dance"
-            class="project-gallery__img" loading="lazy">
-        </div>
-        <div class="project-gallery__item slider-reveal">
-          <img src="images/portfolio/ardah-museum/img4.png" alt="Ardah Museum — Traditional Musician"
-            class="project-gallery__img" loading="lazy">
-        </div>
-        <div class="project-gallery__item slider-reveal">
-          <img src="images/portfolio/ardah-museum/img5.png" alt="Ardah Museum — Traditional Performers"
-            class="project-gallery__img" loading="lazy">
-        </div>
-      </div>
-
-      <!-- Extra gallery — Digital displays -->
-      <div class="project-section__gallery-header">
-        <div class="project-section__gallery-title">ARDAH MUSEUM</div>
-        <img src="images/logos/mixed-purple-red.png" alt="AMAZE" class="project-section__gallery-logo">
-      </div>
-
-      <div class="project-gallery project-gallery--single project-gallery--fullstretch reveal">
-        <div class="project-gallery__item" style="grid-column: span 3; aspect-ratio: 21/9; border-radius: 0;">
-          <img src="images/portfolio/ardah-museum/img2.png" alt="Ardah Museum — Digital Interactive Wall"
-            class="project-gallery__img project-gallery__img--no-hover" loading="lazy">
-        </div>
-      </div>
-    </div>
-
-    <div class="project-divider"></div>
-
-    <!-- ============================
-         PROJECT 3: RIYADH INTERNATIONAL BOOK FAIR
-         ============================ -->
-    <div class="project-section">
-      <div class="project-section__hero reveal">
-        <!-- Large image left -->
-        <div class="project-section__image-wrapper slider-reveal">
-          <img src="images/portfolio/book-fair/img1.png" alt="Riyadh International Book Fair — Grand Stage"
-            class="project-section__image" loading="lazy">
         </div>
 
-        <!-- Info right -->
-        <div class="project-section__info">
-          <h3 class="project-section__name">RIYADH INTERNATIONAL</h3>
-          <div class="project-section__subtitle">BOOK FAIR</div>
-
-          <div class="project-section__desc">
-            <div class="project-section__logo-placeholder">LOGO<br>HERE</div>
-            For the second consecutive year, the ImpressIV team showcased an exceptional standard of excellence at this
-            event. Visitors were captivated by a mesmerizing 3D mapping display on the facades, accompanied by a diverse
-            array of interactive visual exhibits strategically placed throughout the venue.
-            <br><br>
-            Amaze takes immense pride in the successful collaboration with the Ministry of Culture, which played a
-            pivotal role in the resounding success of this event.
+        <!-- SLIDE 3: Ardah Museum — Hero -->
+        <div class="project-slide" data-slide="2">
+          <div class="project-section">
+            <div class="project-section__hero">
+              <div class="project-section__image-wrapper">
+                <img src="images/portfolio/ardah-museum/img1.png" alt="Ardah Museum — Main Exhibition"
+                  class="project-section__image" loading="lazy">
+              </div>
+              <div class="project-section__info">
+                <h3 class="project-section__name">MINISTRY OF CULTURE</h3>
+                <div class="project-section__subtitle">ARDAH MUSEUM</div>
+                <div class="project-section__desc">
+                  <div class="project-section__logo-placeholder">LOGO<br>HERE</div>
+                  It was our delight to collaborate with Sadu in participating in the Saudi Ardah Exhibition held in
+                  Safat
+                  Square for an extended period of six days. The exhibition aims to offer a sensory experience that
+                  harmonizes
+                  the past and the present, incorporating historical content within a visual framework inspired by
+                  desert
+                  nature.
+                  <br><br>
+                  Notably, the exhibition features a visual presentation of the horseshoe show, reminiscent of King
+                  Abdulaziz's performance alongside knights. This exhibition serves as a testament to the Ministry of
+                  Culture's ongoing commitment to introducing the ancient history of the Saudi Ardah and elevating the
+                  significance of Saudi identity and its enduring value for future generations.
+                </div>
+                <a href="#" class="btn btn--play">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3" />
+                  </svg>
+                  PLAY VIDEO
+                </a>
+              </div>
+            </div>
           </div>
-
-          <a href="#" class="btn btn--play">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-              <polygon points="5 3 19 12 5 21 5 3" />
-            </svg>
-            PLAY VIDEO
-          </a>
         </div>
+
+        <!-- SLIDE 4: Ardah Museum — Gallery -->
+        <div class="project-slide" data-slide="3">
+          <div class="project-section">
+            <div class="project-section__gallery-header">
+              <div class="project-section__gallery-title">ARDAH MUSEUM</div>
+              <img src="images/logos/mixed-purple-red.png" alt="AMAZE" class="project-section__gallery-logo">
+            </div>
+            <div class="project-gallery">
+              <div class="project-gallery__item">
+                <img src="images/portfolio/ardah-museum/img3.png" alt="Ardah Museum — Traditional Sword Dance"
+                  class="project-gallery__img" loading="lazy">
+              </div>
+              <div class="project-gallery__item">
+                <img src="images/portfolio/ardah-museum/img4.png" alt="Ardah Museum — Traditional Musician"
+                  class="project-gallery__img" loading="lazy">
+              </div>
+              <div class="project-gallery__item">
+                <img src="images/portfolio/ardah-museum/img5.png" alt="Ardah Museum — Traditional Performers"
+                  class="project-gallery__img" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 5: Ardah Museum — Full-width image -->
+        <div class="project-slide" data-slide="4">
+          <div class="project-section">
+            <div class="project-section__gallery-header">
+              <div class="project-section__gallery-title">ARDAH MUSEUM</div>
+              <img src="images/logos/mixed-purple-red.png" alt="AMAZE" class="project-section__gallery-logo">
+            </div>
+            <div class="project-gallery project-gallery--single project-gallery--fullstretch">
+              <div class="project-gallery__item" style="grid-column: span 3; aspect-ratio: 21/9; border-radius: 0;">
+                <img src="images/portfolio/ardah-museum/img2.png" alt="Ardah Museum — Digital Interactive Wall"
+                  class="project-gallery__img project-gallery__img--no-hover" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 6: Book Fair — Hero -->
+        <div class="project-slide" data-slide="5">
+          <div class="project-section">
+            <div class="project-section__hero">
+              <div class="project-section__image-wrapper">
+                <img src="images/portfolio/book-fair/img1.png" alt="Riyadh International Book Fair — Grand Stage"
+                  class="project-section__image" loading="lazy">
+              </div>
+              <div class="project-section__info">
+                <h3 class="project-section__name">RIYADH INTERNATIONAL</h3>
+                <div class="project-section__subtitle">BOOK FAIR</div>
+                <div class="project-section__desc">
+                  <div class="project-section__logo-placeholder">LOGO<br>HERE</div>
+                  For the second consecutive year, the ImpressIV team showcased an exceptional standard of excellence at
+                  this
+                  event. Visitors were captivated by a mesmerizing 3D mapping display on the facades, accompanied by a
+                  diverse
+                  array of interactive visual exhibits strategically placed throughout the venue.
+                  <br><br>
+                  Amaze takes immense pride in the successful collaboration with the Ministry of Culture, which played a
+                  pivotal role in the resounding success of this event.
+                </div>
+                <a href="#" class="btn btn--play">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3" />
+                  </svg>
+                  PLAY VIDEO
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 7: Book Fair — Gallery -->
+        <div class="project-slide" data-slide="6">
+          <div class="project-section">
+            <div class="project-section__gallery-header">
+              <div class="project-section__gallery-title">BOOK FAIR</div>
+              <img src="images/logos/mixed-purple-red.png" alt="AMAZE" class="project-section__gallery-logo">
+            </div>
+            <div class="project-gallery project-gallery--two">
+              <div class="project-gallery__item">
+                <img src="images/portfolio/book-fair/img2.png" alt="Book Fair — Vision 2030 Display"
+                  class="project-gallery__img" loading="lazy">
+              </div>
+              <div class="project-gallery__item">
+                <img src="images/portfolio/book-fair/img3.png" alt="Book Fair — Interactive Performance"
+                  class="project-gallery__img" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <!-- Gallery row -->
-      <div class="project-section__gallery-header">
-        <div class="project-section__gallery-title">BOOK FAIR</div>
-        <img src="images/logos/mixed-purple-red.png" alt="AMAZE" class="project-section__gallery-logo">
-      </div>
-
-      <div class="project-gallery project-gallery--two reveal reveal--stagger">
-        <div class="project-gallery__item slider-reveal">
-          <img src="images/portfolio/book-fair/img2.png" alt="Book Fair — Vision 2030 Display"
-            class="project-gallery__img" loading="lazy">
-        </div>
-        <div class="project-gallery__item slider-reveal">
-          <img src="images/portfolio/book-fair/img3.png" alt="Book Fair — Interactive Performance"
-            class="project-gallery__img" loading="lazy">
-        </div>
+      <!-- Dot Indicators -->
+      <div class="project-slider__dots" id="slider-dots">
+        <button class="project-slider__dot project-slider__dot--active" data-dot="0" aria-label="Slide 1"></button>
+        <button class="project-slider__dot" data-dot="1" aria-label="Slide 2"></button>
+        <button class="project-slider__dot" data-dot="2" aria-label="Slide 3"></button>
+        <button class="project-slider__dot" data-dot="3" aria-label="Slide 4"></button>
+        <button class="project-slider__dot" data-dot="4" aria-label="Slide 5"></button>
+        <button class="project-slider__dot" data-dot="5" aria-label="Slide 6"></button>
+        <button class="project-slider__dot" data-dot="6" aria-label="Slide 7"></button>
       </div>
     </div>
 
@@ -621,6 +649,33 @@
       <img src="images/hero/m-character.png" alt="" class="final-section__m-char" aria-hidden="true">
 
       <a href="mailto:hello@amaze.sa" class="final-section__email">hello@amaze.sa</a>
+
+      <div class="final-section__socials">
+        <!-- Facebook -->
+        <a href="#" class="final-section__social-link" aria-label="Facebook">
+          <img src="images/social icons/facebook.png" alt="Facebook" class="social-icon-img">
+        </a>
+        <!-- Instagram -->
+        <a href="#" class="final-section__social-link" aria-label="Instagram">
+          <img src="images/social icons/instagram.png" alt="Instagram" class="social-icon-img">
+        </a>
+        <!-- WhatsApp -->
+        <a href="#" class="final-section__social-link" aria-label="WhatsApp">
+          <img src="images/social icons/whatsapp.png" alt="WhatsApp" class="social-icon-img">
+        </a>
+        <!-- Twitter/X -->
+        <a href="#" class="final-section__social-link" aria-label="Twitter">
+          <img src="images/social icons/twitter.png" alt="Twitter" class="social-icon-img">
+        </a>
+        <!-- YouTube -->
+        <a href="#" class="final-section__social-link" aria-label="YouTube">
+          <img src="images/social icons/youtube.png" alt="YouTube" class="social-icon-img">
+        </a>
+        <!-- LinkedIn -->
+        <a href="#" class="final-section__social-link" aria-label="LinkedIn">
+          <img src="images/social icons/linkedin.png" alt="LinkedIn" class="social-icon-img">
+        </a>
+      </div>
 
       <div class="final-section__copyright">© 2026 AMAZE. All rights reserved.</div>
     </div>
