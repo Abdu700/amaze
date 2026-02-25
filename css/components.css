@@ -102,7 +102,7 @@
 }
 
 .nav__logo {
-    height: 52px;
+    height: clamp(10px, 8vw, 35px);
     width: auto;
     transition: transform var(--dur-fast) var(--ease-out);
 }
@@ -934,7 +934,6 @@
 .final-section__email {
     font-size: clamp(1.25rem, 2.2vw, 2rem);
     font-weight: 800;
-    text-transform: uppercase;
     letter-spacing: 0.06em;
     background: linear-gradient(135deg, #7B2D8E, #B5246F, #E63946);
     -webkit-background-clip: text;
