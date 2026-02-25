@@ -1,0 +1,472 @@
+/* ============================================
+   Animations — Scroll Reveals, Keyframes,
+   Hero entrance, and Slider Revelation
+   ============================================ */
+
+/* ================================
+   SCROLL REVEAL — Base States
+   ================================ */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal--left {
+    transform: translateX(-50px);
+}
+
+.reveal--right {
+    transform: translateX(50px);
+}
+
+.reveal.revealed {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* Stagger children */
+.reveal--stagger>* {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal--stagger>*.revealed-child {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ================================
+   SLIDER REVELATION — Horizontal wipe effect
+   ================================ */
+.slider-reveal {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-reveal::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--clr-near-black);
+    z-index: 2;
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1);
+    pointer-events: none;
+}
+
+.slider-reveal.slider-revealed::before {
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.slider-reveal img,
+.slider-reveal>* {
+    opacity: 0;
+    transition: opacity 0.4s ease 0.4s, transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.slider-reveal.slider-revealed img,
+.slider-reveal.slider-revealed>* {
+    opacity: 1;
+}
+
+
+/* ================================
+   KEYFRAME ANIMATIONS
+   ================================ */
+@keyframes blobFloat {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    25% {
+        transform: translate(20px, -30px) scale(1.05);
+    }
+
+    50% {
+        transform: translate(-15px, 20px) scale(0.95);
+    }
+
+    75% {
+        transform: translate(25px, 15px) scale(1.02);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.4;
+        transform: scale(0.8);
+    }
+}
+
+@keyframes bounceScroll {
+
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(8px);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes revealSlide {
+    from {
+        transform: scaleX(1);
+    }
+
+    to {
+        transform: scaleX(0);
+    }
+}
+
+
+/* ================================
+   HERO ENTRANCE ANIMATION
+   ================================ */
+.hero__badge {
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+.hero__title {
+    opacity: 1;
+    min-height: 1.2em;
+}
+
+.hero__title .typewriter-cursor {
+    display: inline-block;
+    width: 3px;
+    height: 0.9em;
+    background: var(--clr-mint);
+    margin-left: 4px;
+    vertical-align: baseline;
+    animation: cursorBlink 0.7s steps(1) infinite;
+}
+
+@keyframes cursorBlink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
+.hero__subtitle {
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+
+.hero__cta {
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+}
+
+.hero__image-wrapper {
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+
+/* ================================
+   Hover micro-animations
+   ================================ */
+.service-item {
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        box-shadow 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.service-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.number-stat {
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.number-stat:hover {
+    transform: translateX(8px);
+}
+
+/* Project gallery item reveal — smoother lift */
+.project-gallery__item {
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        box-shadow 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.project-gallery__item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
+}
+
+/* About section image subtle zoom */
+.about-section__image {
+    transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.about-section:hover .about-section__image {
+    transform: scale(1.02);
+}
+
+/* Hero image float */
+.hero__image {
+    animation: heroFloat 6s ease-in-out infinite;
+}
+
+@keyframes heroFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+/* Button hover glow pulse */
+.btn--primary:hover,
+.btn--gradient:hover {
+    box-shadow: 0 0 24px rgba(120, 189, 149, 0.3),
+        0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Numbers section image subtle zoom */
+.numbers-section__image {
+    transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.numbers-section:hover .numbers-section__image {
+    transform: scale(1.02);
+}
+
+/* Footer bg image slow zoom on hover */
+.final-section__bg-image {
+    transition: transform 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.final-section__right:hover .final-section__bg-image {
+    transform: scale(1.03);
+}
+
+
+/* ================================
+   SCROLL PROGRESS INDICATOR
+   ================================ */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: linear-gradient(90deg, #7B2D8E, #B5246F, #E63946, #78BD95);
+    z-index: 10001;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 10px rgba(181, 36, 111, 0.4);
+}
+
+
+/* ================================
+   ABOUT — Split-screen Slide
+   ================================ */
+.about-section .about-section__label {
+    opacity: 0;
+    transform: translateX(-50px) rotate(180deg);
+    transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.about-section .about-section__image {
+    opacity: 0;
+    transform: translateX(-80px);
+    transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s,
+        transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
+}
+
+.about-section .about-section__content {
+    opacity: 0;
+    transform: translateX(80px);
+    transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s,
+        transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+}
+
+.about-section.split-revealed .about-section__label {
+    opacity: 1;
+    transform: translateX(0) rotate(180deg);
+}
+
+.about-section.split-revealed .about-section__image {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.about-section.split-revealed .about-section__content {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Text Highlight Scroll Trigger */
+.text-highlight {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.text-highlight::before {
+    content: '';
+    position: absolute;
+    inset: -2px -6px;
+    background: linear-gradient(90deg, #7B2D8E, #B5246F, #E63946, #78BD95);
+    border-radius: 4px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    opacity: 0.4;
+}
+
+.text-highlight.active-highlight::before {
+    transform: scaleX(1);
+}
+
+
+/* ================================
+   SERVICE CARDS — 3D Tilt & Draw Border
+   ================================ */
+.service-item {
+    padding: var(--space-md);
+    transform-style: preserve-3d;
+    perspective: 800px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+}
+
+.service-item.tilt-active {
+    will-change: transform;
+}
+
+.service-item::before,
+.service-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    pointer-events: none;
+    border-radius: 4px;
+}
+
+.service-item::before {
+    top: 0;
+    left: 0;
+}
+
+.service-item::after {
+    bottom: 0;
+    right: 0;
+}
+
+.service-item:hover::before {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #78BD95;
+    border-right: 2px solid #78BD95;
+    transition: width 0.2s ease-out, height 0.2s ease-out 0.2s;
+}
+
+.service-item:hover::after {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #78BD95;
+    border-left: 2px solid #78BD95;
+    transition: border-color 0s ease-out 0.4s, width 0.2s ease-out 0.4s, height 0.2s ease-out 0.6s;
+}
+
+
+/* ================================
+   IMPROVED CURTAIN REVEAL
+   ================================ */
+.slider-reveal::before {
+    background: linear-gradient(135deg, #2D1B4E, #B5246F 50%, #E63946);
+}
+
+
+/* ================================
+   GRADIENT BORDER GLOW — Contact Form
+   ================================ */
+@keyframes borderGlow {
+    0% {
+        border-color: rgba(123, 45, 142, 0.5);
+        box-shadow: 0 0 8px rgba(123, 45, 142, 0.15);
+    }
+
+    33% {
+        border-color: rgba(181, 36, 111, 0.5);
+        box-shadow: 0 0 8px rgba(181, 36, 111, 0.15);
+    }
+
+    66% {
+        border-color: rgba(230, 57, 70, 0.5);
+        box-shadow: 0 0 8px rgba(230, 57, 70, 0.15);
+    }
+
+    100% {
+        border-color: rgba(123, 45, 142, 0.5);
+        box-shadow: 0 0 8px rgba(123, 45, 142, 0.15);
+    }
+}
+
+.form-group__input:focus,
+.form-group__textarea:focus {
+    animation: borderGlow 3s ease infinite;
+}
+
+.form-group__input,
+.form-group__textarea {
+    transition: border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.form-group__input:focus,
+.form-group__textarea:focus {
+    transform: translateY(-2px);
+}
